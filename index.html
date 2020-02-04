@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jay Kay's website</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <script src="js/1.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="navbrand">
+        <a href="index.html">JAY KAY</a>
+      </div>
+      <div class="navmenu">
+        <a href="#JayKay">Jay Kay</a>
+        <a href="#timeline">Time</a>
+        <a href="#coding">Coding</a>
+        <a href="#youtube">Youtube</a>
+      </div>
+  </div>
+<div class="article" id="JayKay">
+<h2 class="stroke">This is an website for coding practice.</h2>
+
+<img src="imgs/my pic.jpg" alt="my picture" width=20% style="margin: 0px 20px 0px 20px; border-radius: 20%;">
+<div>
+<ul class="stroke" style="padding-left: 0px;">
+  <li><b>Name: DongWook Kim</b></li>
+  <li><b>Date of birth: 1989. Aug. 9</b></li>
+  <li><b>E-mail: kimdw8091@gmail.com</b></li>
+</ul>
+</div>
+</div>
+
+<div class="timeline" id="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2019</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
+
+<div class="coding" id="coding">
+<p>The best free coding course I've ever found</p>
+<a href="https://www.opentutorials.org/course/1" target="_blank">
+  Link to the Coding Course Website
+</a>
+<h2>or just click the image below</h2>
+<a href="https://www.opentutorials.org/course/1" target="_blank">
+<img class="linkimg" src="imgs/coding everyday.jpg" alt="Coding Course">
+</a>
+</div>
+
+<div id="youtube" class="youtube">
+<p>I'm running my Youtube Channel</p>
+<img src="imgs/youtubelogo.png" alt="youtube" style="width: 10%;">
+<h2>click the image below</h2>
+<a href="https://www.youtube.com/channel/UCg9RIMFyrs2Z5w-9vCGp1ig?view_as=subscriber">
+  <img src="imgs/popo.png" alt="To my channel" style="width: 10%">
+</a>
+<h2>The most viewed video in my channel</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KUEcEHTZxrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  </body>
+</html>
